@@ -21,5 +21,36 @@ Example for printShape("Diamond", 5, "*");
   * 
 */
 function printShape(shape, height, character) {
-  
+  let rowarr = [];
+  let colarr = [];
+  switch (shape) {
+    case 'square':
+      for(i = 0; i < height; i++){
+       rowarr.push(character);
+        for(j = 0; j < height; j++){
+         colarr.push(character);
+        }
+      } 
+      console.log(rowarr[colarr]);
+      break;
+    case 'triangle':
+
+
+
+      break;
+    case 'Diamond':
+
+
+
+      break;
+    default:
+      break;
+  }
 }
+
+//Assuming a lot of things here
+let shape = 'square';
+let height = 15;
+const character = '&'
+
+printShape(shape, height, character);
