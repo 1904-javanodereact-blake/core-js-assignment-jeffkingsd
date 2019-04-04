@@ -28,7 +28,7 @@ while (num2 >= num1)
 //num2 = 'sad';
 
 
-if (isNaN(num1) == true || isNaN(num2) == true)
+if (isNaN(num1) === true || isNaN(num2) === true)
 {
     throw `Values ${num1} and ${num2} are not numbers! Number format only!`
 }
