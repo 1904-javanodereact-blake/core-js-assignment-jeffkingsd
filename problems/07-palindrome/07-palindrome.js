@@ -2,9 +2,7 @@
 Define function isPalindrome(someStr)
 Return true if someStr is a palindrome, otherwise return false */
 function isPalindrome(someStr) {
-
-    let num1 = 0;
-    let num2 = 0;
+    //someStr.replace(/\s+/g,'');
 for( i = 0; i < someStr.length; i++)
 {
  // let palintest = someStr[i];
@@ -26,7 +24,7 @@ for( i = 0; i < someStr.length; i++)
 }
 
 }
-let arrstr = ['racecar', 'fidof', 'bob', 'level', 'lool'];
+let arrstr = ['racecar', 'fidof', 'bo b', 'level', 'lool'];
 console.log(`List of String to test:  ${arrstr}`);
 //let palinstr = 'racecar';
 for (d = 0; d < arrstr.length; d++){
@@ -41,10 +39,7 @@ I got bored so I made one reading from an array and another read from a string f
 /* 7. Palindrome
 Define function isPalindrome(someStr)
 Return true if someStr is a palindrome, otherwise return false */
-function isPalindrome(someStr) {
-
-    let num1 = 0;
-    let num2 = 0;
+function isPalindrome2(someStr) {
 for( i = 0; i < someStr.length; i++)
 {
   //let palintest = someStr[i];
@@ -63,8 +58,9 @@ for( i = 0; i < someStr.length; i++)
     return true;
     }
 }
-let palinstr = 'racecar';
+let palinstr = 'rac ecar';
+//palinstr.replace(/\s/,'');
 console.log(`
 \nString to test ${palinstr}
-Palindrome list ${isPalindrome(palinstr)}`);
+Palindrome list ${isPalindrome2(palinstr)}`);
 
